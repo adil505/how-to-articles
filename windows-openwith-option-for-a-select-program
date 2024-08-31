@@ -8,5 +8,5 @@ Right click, select new and then a Key named vscode.
 Go in vscode window, right click (Default), selct modify, and enter "Open with VSC" in value data.
 While on the vscode window, optionally, create an Icon key pointing to the Code.exe. Right click on vscode window, select new then string value, name the key as Icon. Right click on Icon, select modify, and enter the VS code path in value data. I used this: C:\Users\User\AppData\Local\Programs\Microsoft VS Code\Code.exe
 Go to the registry path HKEY_CLASSES_ROOT\Directory\shell\vscode, right click vscode, select new, and then a Key named command
-Go in command window, right click (Default), select modify, and enter the VSC path. I used this: C:\Users\User\AppData\Local\Programs\Microsoft VS Code\Code.exe (the same for icon)
+Go in command window, right click (Default), select modify, and enter the VSC path followed by %1 both path and %1 enclosed in quotes. I used this: "C:\Users\User\AppData\Local\Programs\Microsoft VS Code\Code.exe" "%1" (the same for icon)
 You don't need to save or update the registry. Entries in the registry get immediate effect. Now go back to windows explorer and you should be able to see open with VS code option.
