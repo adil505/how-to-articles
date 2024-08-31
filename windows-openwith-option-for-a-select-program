@@ -2,7 +2,7 @@ Problem statement:
 I can't open a folder with VS code from windows explorer. May be I chose options at the time of installation where I skipped necessary settings for this, I don't know. How do I fix this?
 
 Fix:
-Press ⊞ Win + R and type regedit.
+Press ⊞ Win + R and type regedit (as in for windows registery edit).
 Navigate to the path HKEY_CLASSES_ROOT\Directory\shell.
 Right click, select new and then a Key named vscode.
 Go in vscode window, right click (Default), selct modify, and enter "Open with VSC" in value data.
